@@ -222,7 +222,7 @@ class PaymentService(
 }
 
 class CreatePaymentRequest(
-    val nanoErg: Long, // nano erg value to pay to the recipient, or 0 if only token should be paid
+    val nanoErg: Long, // nano erg value to pay to the recipient, or minNanoErgValue if only token should be paid
     val tokenId: String?, // token ID to pay to the recipient, or null if none
     val tokenRawAmount: Long?, // raw amount of token to pay. note it is the raw amount
     val receiverAddress: String, // address to pay to
