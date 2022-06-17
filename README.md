@@ -4,6 +4,8 @@ This is a ready to use payment portal application to use for websites and applic
 payments on the Ergo blockchain. It supports payments both in Ergo (the blockchain's native token)
 and every other token on Ergo.
 
+## Self-hosting 
+
 You can deploy this project as it is on a hosting service supporting JVM applications (Heroku, 
 Dokku on DigitalOcean, ...) and use its REST API from your website, application, game backend, ... 
 But keep in mind that this configuration uses an in-memory db and will 
@@ -20,8 +22,14 @@ by typing in
 
     gradlew bootRun
 
-You can find a deployed version of this service on TokenJay to integrate into your applications
-without the need to host it yourself. TODO link to doc
+## Use the hosted version
+
+You can find a deployed version of this service on [TokenJay](https://tokenjay.app/) to integrate 
+into your applications without the need to host it yourself.
+
+To cover the server costs, the fee for completed transactions is 0.1% of ERG and tokens (min 0.001 ERG, min 1 token unit in its raw value - for SigUSD, this is 0.01 SigUSD).
+
+[Swagger](https://api.tokenjay.app)
 
 ## How the code is organized
 
