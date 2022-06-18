@@ -20,7 +20,7 @@ project and directly use it without going through a REST API.
 Or you use it as an example and built up your own code! Clone it and run it locally (Java 11 needed) 
 by typing in 
 
-    gradlew bootRun
+    gradle bootRun
 
 ## Use the hosted version
 
